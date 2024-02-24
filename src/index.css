@@ -13,6 +13,8 @@
 
 body {
     font-family: 'Nunito', sans-serif;
+    background-color: #000;
+    color: #fff;
 }
 
 button,
@@ -57,11 +59,11 @@ img {
 }
 
 .header {
-    background-color: #fff;
+    background-color: #000;
     position: sticky;
     top: 0;
     z-index: 1;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #fff;
 }
 
 .header__title-bar {
