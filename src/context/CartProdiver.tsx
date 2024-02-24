@@ -42,8 +42,8 @@ const reducer = (state: CartStateType, action: ReducerAction): CartStateType => 
                 throw new Error('action.paylaod missing in REMOVE action');
             }
             const { sku } = action.payload;
-            const filteredCart = state.cart.filter(item => item.sku !== sku);
-            return { ...state, cart: { ...filteredCart } }
+            const filteredCart: CartItemType[] = state.cart.filter(item => item.sku !== sku);
+            return { ...state, cart: [...filteredCart] }
         }
         case REDUCER_ACTION_TYPE.QUANTITY: {
             if (!action.payload) {
@@ -109,7 +109,7 @@ export const CartContext = createContext<UseCartContextType>(initCartContextStat
 type ChildrenType = { children?: ReactElement | ReactElement[] }
 
 export const CartProvider = ({ children }: ChildrenType): ReactElement => {
-    
+
     return (
         <CartContext.Provider value={useCartContext(initCartState)}>
             {children}
