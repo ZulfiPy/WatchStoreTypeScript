@@ -2,18 +2,18 @@
     "products": [
         {
             "sku": "item0001",
-            "name": "Widget",
-            "price": 9.99
+            "name": "ZUFIL 'tarkpea' glasses",
+            "price": 39.99
         },
         {
             "sku": "item0002",
-            "name": "Premium Widget",
-            "price": 19.99
+            "name": "ZUFIL 'glam' glasses",
+            "price": 59.99
         },
         {
             "sku": "item0003",
-            "name": "Deluxe Widget",
-            "price": 29.99
+            "name": "ZUFIL 'skeleton' glasses",
+            "price": 49.99
         }
     ]
 }
